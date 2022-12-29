@@ -27,16 +27,6 @@
 //     'Istanbul <-> 1000']
 // )
 
-let arr = [];
-arr[1]
-
-let obj = {
-    key: value,
-    func: (a, b) => { return a + b}
-}
-
-obj.key
-obj[func](5, 4)
 
 
 function townPopulation2(list) {
@@ -48,8 +38,6 @@ function townPopulation2(list) {
 
         if (result[name] != undefined) {
             pop += result[name] // pop = pop + result[name];
-            console.log(result[name]); result[name] //    array[1]
-            //result[name] += pop;
         }
         
         result[name] = pop;
