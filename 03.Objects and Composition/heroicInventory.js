@@ -6,7 +6,7 @@ function heroicInventory(input){
     for(let element of input){
         [name, level, items] = element.split(' / ');
         level=Number(level);
-        items = items ? items.split(','):[];
+        items = items ? items.split(', '):[];
         jsonArr.push({name, level, items});
     }
     console.log(JSON.stringify(jsonArr));
