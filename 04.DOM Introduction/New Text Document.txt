@@ -1,0 +1,12 @@
+temp0.textContent
+"Hello, %insert name here%!"
+const text = temp0.textContent
+undefined
+text.replace('%insert name here%', 'Document Object Model')
+"Hello, Document Object Model!"
+const result = text.replace('%insert name here%', 'Document Object Model')
+undefined
+result
+"Hello, Document Object Model!"
+temp0.textContent = result
+"Hello, Document Object Model!" 
