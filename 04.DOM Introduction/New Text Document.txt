@@ -10,3 +10,26 @@ result
 "Hello, Document Object Model!"
 temp0.textContent = result
 "Hello, Document Object Model!" 
+
+>>>>>>>>>>>>>>>>>>>>>>>>>DOM ELEMENT SELECTION ETC..<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+document.getElementById('items')
+<ul id="items">
+
+constdocument.getElementById('items')
+
+document.getElementById('items')
+<ul id="items">
+
+const list = document.getElementById('items')
+undefined
+list.children
+HTMLCollection { 0: li, 1: li, 2: li, length: 3 }
+
+list.children[0].textContent
+"first item"
+document.getElementById('result')
+<textarea id="result">
+
+document.getElementById('result').value = "adaksdjald"
+"adaksdjald"

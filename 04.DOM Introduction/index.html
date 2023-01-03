@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Demo</title>
 </head>
+
 <body>
-    <button onclick="sum(3, 5)">Don't Touch Me</button>
-    <script src = "app.js"></script>
+    <h1 id = "title"> DOM Introduction Demo</h1>
+    <button onclick="'hello'">Click Me</button>
+    <ul>
+        <li class = "row"> DOM Example Properties Example</li>
+        <li class = "row">DOM methods Example</li>
+    </ul>
+    <script>
+        document.getElementById('title').textContent += ' Hello!';
+    </script>
 </body>
 </html>
