@@ -10,11 +10,21 @@
 //     return result.join('\n');
 // }
 
-function pieceOfPie(pies, start, end){
-    const startIndex = pies.indexOf(start);
-    const endIndex = pies.indexOf(end)+1;
+// function pieceOfPie(pies, start, end){
+//     const startIndex = pies.indexOf(start);
+//     const endIndex = pies.indexOf(end+1);
 
-    console.log(pies.slice(startIndex, endIndex).join('\n'))
+//     console.log(pies.slice(startIndex, endIndex).join('\n'))
+// }
+
+function pieceOfPie(arr, target1, target2){
+    let start = arr.indexOf(target1);
+    let end = arr.indexOf(target2);
+    let newArr = [];
+    for(let i = start; i <= end;i++ ){
+        newArr.push(arr[i])
+    }
+    return newArr;
 }
 
 

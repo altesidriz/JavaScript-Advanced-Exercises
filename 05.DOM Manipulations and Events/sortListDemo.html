@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulation Demo</title>
+    <title>Sort List Demo</title>
 </head>
+
 <body>
     <button onclick="sort()">Sort List</button>
     <ul>
@@ -18,18 +20,15 @@
 
     <script>
         function sort(){
-            const ul = document.querySelector('ul')
-            const items = [...ul.children];
+            const ul = document.querySelector('ul');
+            const items = [...ul.children]
+            items.sort((a, b) => Number(a.textContent) - Number(b.textContent));
 
-            items.sort((a,b) => Number(a.textContent) - Number(b.textContent));
-            
-            for(const item of items){
-                ul.appendChild(item)
+            for (const item of items) {
+                ul.appendChild(item)   
             }
-            /* or we can use 
-            ul.append(..items) */
         }
     </script>
-    
 </body>
+
 </html>

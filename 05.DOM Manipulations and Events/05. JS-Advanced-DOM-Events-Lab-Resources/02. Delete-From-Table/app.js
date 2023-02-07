@@ -10,9 +10,9 @@ function deleteByEmail() {
     let found = false;
 
     for (let row of rows) {
-        if (row.children[1].textContent == value) {
+        if (row.children[1].textContent == value.trim()) {
             //row.remove();
-            const parent = row.parentElement; 
+            const parent = row.parentElement;    //parentNode; 
             parent.removeChild(row);
             found = true;
         }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation Demo 1</title>
+</head>
+
+<body>
+    <div>
+        <h1>Hello</h1>
+        <p>Content</p>
+    </div>
+    <p>We use <strong style="color: brown;">.cloneNode()</strong> to copy DOM element. When we say <strong
+            style="font-style: italic;">
+            cloneNode(false)->shallow copy, and cloneNode(true)->deep copy!</strong></p>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+
+    </ul>
+    <ul>
+        <li>Fourth</li>
+        <li>Fifth</li>
+    </ul>
+    <div> Here you have an example for moving elements from one child to another 
+        with <strong>appendChild()</strong>.
+        <textarea style="display: block;">
+            document.querySelector('ul').children
+            HTMLCollection { 0: li, 1: li, 2: li
+            , length: 3 }
+            
+            document.querySelector('ul').children[1] // 
+    
+            const li = document.querySelector('ul').children[1]
+            
+            const ul2 = document.querySelectorAll('ul')[1]
+    
+            ul2.appendChild(li)
+
+            </textarea>
+    </div>
+</body>
+
+</html>
